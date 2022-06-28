@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <title>Guess the Number</title>
+  </head>
+  <body>
+    <div class="container flex">
+      <header>
+        <h1 class="text">Number of<br />the Day</h1>
+        <div>
+          <p class="symbol text" id="display-symbol">?</p>
+        </div>
+        <div class="results">
+          <div class="indicators text"></div>
+          <div class="attempts-counter text">Attempts left: 3</div>
+          <button
+            type="reset"
+            class="start-over button text"
+            onClick="window.location.reload();"
+          >
+            Start Over
+          </button>
+        </div>
+      </header>
+      <form onsubmit="onSubmitHandler(event)">
+        <input
+          type="text"
+          id="input-field"
+          placeholder="Input your guess"
+          class="input text"
+          autocomplete="off"
+        />
+        <button type="submit" class="button text">SUBMIT</button>
+      </form>
+      <div>
+        <h2 class="subtitle text">Mechanics of the Game:</h2>
+        <p class="instructions text">
+          We have selected a random number between <span>1-20</span>. See if you
+          can guess it in three (3) attempts or fewer. <br />
+          <br />We'll tell you if your guess was too high or too low.
+        </p>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

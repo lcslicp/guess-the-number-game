@@ -1,0 +1,114 @@
+html {
+  margin: auto;
+  padding: 0;
+  background-color: #222831;
+}
+.container {
+  margin: auto;
+  max-width: 500px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  font-family: 'Press Start 2P', monospace;
+  text-align: center;
+  color: #eeeeee;
+}
+h1 {
+  line-height: 50px;
+  font-size: 40px;
+}
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+.symbol {
+  color: #ffd369;
+  font-size: 120px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  animation: float 6s ease-in-out infinite;
+}
+.indicators {
+  color: #ff0000;
+  font-size: 30px;
+  line-height: 40px;
+  padding-bottom: 5px;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.attempts-counter {
+  color: #ffd369;
+  display: block;
+}
+form {
+  padding: 30px;
+}
+@keyframes shake {
+  0% {
+    transform: translate(3px, 0);
+  }
+  50% {
+    transform: translate(-3px, 0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+.subtitle {
+  font-size: 15px;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  padding: 10px 0 10px 0;
+}
+.instructions {
+  font-size: 12px;
+  line-height: 20px;
+}
+.instructions span {
+  color: #ffd369;
+}
+.input {
+  width: 215px;
+  height: 30px;
+  color: #393e46;
+  border: 2px solid #393e46;
+  border-radius: 5px;
+}
+.button {
+  width: 100px;
+  height: 40px;
+  color: #222831;
+  background-color: #ffd369;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+.button:hover {
+  transform: scale(112%);
+  cursor: pointer;
+}
+.start-over {
+  width: 150px;
+  height: 40px;
+  background-color: yellow;
+  border-radius: 10px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  display: none;
+}
